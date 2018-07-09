@@ -1,1 +1,1 @@
-# docker-node-express-mongo
+# Docker + MEAN Stack

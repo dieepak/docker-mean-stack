@@ -46,4 +46,9 @@ DELETE  | /api/hotels/12345/reviews/54321 | Delete a specific review for a speci
 	WriteResult({ "nMatched" : 12, "nUpserted" : 0, "nModified" : 12 })
 
 
+### Test deployment
+
+[http://localhost:3000](http://localhost:3000)
+
+
 

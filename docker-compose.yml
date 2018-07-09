@@ -1,0 +1,29 @@
+version: '2'
+services:
+    app:
+        container_name: mean-app
+        restart: always
+        build: .
+        volumes:
+            - '.:/usr/src/app'
+        ports:
+            - '3000:3000'
+        links:
+            - mongodb
+    mongodb:
+        container_name: mean-mongodb
+        image: mongo
+        volumes:
+            - mongo-db-data
+        ports:
+            - '27017:27017'
+    mongo-seed:
+        container_name: mean-mongo-seed
+        image: mongo
+        links:
+            - mongodb
+        volumes:
+            - './api/data/hotel-data.json:/seed-data/hotel-data.json'
+        command:
+          'bash -c "mongoimport --host mongodb --db meanhotel --collection hotels --type json --file /seed-data/hotel-data.json --jsonArray"'
+    

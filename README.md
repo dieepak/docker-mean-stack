@@ -48,7 +48,7 @@ DELETE  | /api/hotels/12345/reviews/54321 | Delete a specific review for a speci
 
 ### Test deployment
 
-[http://localhost:3000](http://localhost:3000)
+<a href="http://localhost:3000" target="_blank">http://localhost:3000</a>
 
 
 

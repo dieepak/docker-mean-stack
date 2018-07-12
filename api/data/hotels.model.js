@@ -30,7 +30,7 @@ var roomSchema = new mongoose.Schema({
 });
 
 var hotelSchema = new mongoose.Schema({
-  name : {
+    name : {
     type : String,
     required : true
   },

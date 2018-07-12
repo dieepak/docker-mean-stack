@@ -8,6 +8,17 @@
     /* Margin bottom by footer height */
     margin-bottom: 90px;
   }
+  .has-error {
+    border-color:red!important;
+  }
+  .container{
+    padding: 5px 0 0 0;
+  }
+
+  .page-container{
+    padding: 50px;
+  }
+
   .padded {
     padding-top: 30px
   }

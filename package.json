@@ -13,8 +13,13 @@
   "author": "Deepak Gupta",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.7.2",
+    "angular-jwt": "^0.1.10",
+    "angular-route": "^1.7.2",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.2.2"
   },
   "devDependencies": {

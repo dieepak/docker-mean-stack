@@ -1,25 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="meanhotel">
+
 <head>
-  <title>Docker + MEAN Stack</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="css/custom.css" rel="stylesheet"/>
+  <title>MEAN hotel</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
 </head>
+
 <body>
 
-  <h1>Docker + MEAN Stack</h1>
+  <mh-navigation></mh-navigation>
+  <div class="page-container">
+    <div ng-view></div>
+  </div>
 
-    <div class="container">
-      <p class="text-muted text-center">
-        <a href="#" target="_self"><img src="/images/mean-stack.png"  alt="Docker + MEAN Stack"/></a>
-      </p>
 
-      <p class="text-muted text-center">
-        <small>&copy; 2018 Docker + MEAN Stack</small>
-      </p>
-    </div>
+  <footer class="footer">
+    <p class="text-muted text-center">
+      <small>&copy; 2018 MEAN Stack</small>
+    </p>
+  </footer>
 
   <script src="jquery/jquery-2.1.4.min.js"></script>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="node_modules/angular-jwt/dist/angular-jwt.js"></script>
+  <script src="angular-app/app.js"></script>
+  <script src="angular-app/hotel-list/hotel-list-controller.js"></script>
+  <script src="angular-app/hotel-display/hotel-display-controller.js"></script>
+  <script src="angular-app/hotel-data-factory/hotel-data-factory.js"></script>
+  <script src="angular-app/hotel-rating/hotel-rating-directive.js"></script>
+  <script src="angular-app/register/register-controller.js"></script>
+  <script src="angular-app/navigation-directive/navigation-directive.js"></script>
+  <script src="angular-app/login/login-controller.js"></script>
+  <script src="angular-app/auth//auth-factory.js"></script>
+  <script src="angular-app/auth/auth-interceptor.js"></script>
 
 </body>
+
 </html>
